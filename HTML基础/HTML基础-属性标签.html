@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML基础-属性标签
+    </title>
+    <style type="text/css">
+        p.class
+        {
+            color:blue;
+        }
+    </style>
+    <script type="text/javascript">
+        function show(value)
+        {
+            var comments = value.getAttribute("data-show-comments");
+            alert(value.innerHTML + comments);
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        这是标题一
+    </h1>
+    <a href="../HTML基础/HTML基础-属性标签.html" accesskey="h";>accesskey 属性定义快捷键</a>
+        <!--IE, Chrome, Safari, Opera 15+: [ALT] + accesskey
+            Opera prior version 15: [SHIFT] [ESC] + accesskey
+            Firefox: [ALT] [SHIFT] + accesskey               -->
+    
+    <p class="class">class 属性定义元素的类名</p>
+    <p contenteditable="true">contenteditable 属性定义是否可编辑</p>
+        <!--contenteditable="true"为可编辑
+            contenteditable="false"为不可编辑                 -->
+    
+    <p contenteditable="true" spellcheck="true">spellcheck 属性对元素文本进行拼写检查</p>
+        <!--spellcheck="true"为对元素文本进行拼写检查
+            spellcheck="false"为不对元素文本进行拼写检查
+            可对类型为text的input元素中的值(非密码)、textarea元素中的值、可编辑元素中的值检查  -->
+    
+    <p onclick="show(this)" id="owl" data-show-comments="嵌入自定义数据">data*- 属性嵌入自定义数据</p>
+    <p dir="ltr">dir 属性定义文本显示方向</p>
+        <!--dir="ltr"为从左到右显示
+            dir="rtl"为从右到左显示
+            dir="auto"为根据浏览器自动显示                     -->
+    
+    <p hidden="hidden">hidden 属性规定隐藏元素</p>hidden 属性规定隐藏元素<br/>
+    <p id="id">id 属性定义元素的唯一ID</p>
+        <!--id 属性可用作链接锚(link anchor),通过JavaScript(HTML DOM)或通过CSS为带有指定id的元素改变或添加样式。              -->      
+    
+    <p lang="en">lang 属性规定元素内容的语言</p>
+        <!--lang="language_code" language_code语言种类
+            Html语言代码手册https://www.runoob.com/tags/html-language-codes.html      -->
+    
+    <p style="color:green;text-align:left;">style 属性规定元素的样式</p>
+    <p href="HTML基础-属性标签.html" tabindex="1">tabindex 属性规定tab键导航元素的顺序</p>
+    <abbr title="title 属性规定关于元素的信息">title 属性</abbr>规定关于元素的信息<br/>
+    <p translate="no">translate 属性规定元素是否可被翻译 love</p>
+        <!--translate="no"不可被翻译
+            translate="yes"可被翻译             -->
+</body>
+</html>
