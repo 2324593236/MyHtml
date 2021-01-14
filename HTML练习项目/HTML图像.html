@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML图像
+    </title> <!--title定义HTML标题-->
+<body>
+    <img border="1" src="../data/蜡笔小新.jpg" title="align='bottom'默认值底部对齐" alt="蜡笔小新" align="bottom" height="50px" width="50px">align="bottom"默认值底部对齐<br/><br/> <!--alt图片的可替换文本;align图片的对齐方式-->
+    <img border="1" src="../data/蜡笔小新.jpg" title="align='middle'中间对齐" alt="蜡笔小新" align="middle" height="50px" width="50px">align="middle"中间对齐<br/><br/>
+    <img border="1" src="../data/蜡笔小新.jpg" title="align='top'顶部对齐" alt="蜡笔小新" align="top" height="50px" width="50px">align="top"顶部对齐<br/><br/>
+
+    <img src="../data/蜡笔小新.jpg" alt="蜡笔小新" title="float:left样式浮动在左侧" style="float: left" border="1" width="50px" height="50px">float:left样式浮动在左侧
+    <img src="../data/蜡笔小新.jpg" alt="蜡笔小新" title="float:right样式浮动在右侧" style="float: right" border="1" width="50px" height="50px"><p align="right">float:right样式浮动在右侧</p><br/>
+
+    <a href="HTML图像.html"><img src="../data/蜡笔小新.jpg" alt="蜡笔小新" border="1" width="50px" height="50px">图片链接</a><br/>
+
+    <img src="../data/地图.jpg" alt="map" style="image-align: center;" width="200" height="200" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="100,0,197,98" href="HTML标题.html" title="shape='rect'矩形;coords='100,0,197,98'(100,0)左上角顶点坐标,(197,98)右下角顶点坐标"> <!--shape形状;coords坐标-->
+        <!--shape="rect"矩形;coords="x1,y1,x2,y2"(x1,y1)左上角顶点坐标,(x2,y2)右下角顶点坐标-->
+        <area shape="circle" coords="50,50,50" href="HTML段落.html" title="shape='circle'圆形;coords='50,50,50'(50,50)圆心坐标,50半径">
+        <!--shape="circle"圆形;coords="x1,y1,r"(x1,y1)圆心坐标,r半径-->
+        <area shape="poly" coords="100,100,145,140,128,197,70,197,51,140" href="HTML链接.html" title="shape='poly'多边形;coords='x1,y1,x2,y2,x3,y3...100,100,145,140,128,197,70,197,51,140'多边形各个顶点坐标">
+        <!--shape="poly"多边形;coords="x1,y1,x2,y2,x3,y3..."多边形各个顶点坐标-->
+    </map>
+</body>
+</html>

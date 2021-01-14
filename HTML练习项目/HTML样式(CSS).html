@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML样式(CSS)
+    </title> <!--title定义HTML标题-->
+    <style type="text/css">
+        p
+        {
+            color: blue;margin-left:20px;letter-spacing:1px;font-family:verdana;font-size:6px;text-align:left;
+        }
+        span
+        {
+            background-color: #b4009e;color: #ffffff
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../data/HTML样式(CSS).css">
+</head>
+<body>
+    <p style="color: blue;margin-left: 20px;letter-spacing: 1px;font-family: verdana;font-size: 6px;text-align: left;">margin-left文本左边距;letter-spacing字体字间距;font-family字体类型;font-size字体尺寸;text-align对齐方式;<span style="background-color: #b4009e;color: #ffffff">span段落字体标签;background-color背景颜色</span></p> <!--内联样式-->
+
+    <p>margin-left文本左边距;letter-spacing字体字间距;font-family字体类型;font-size字体尺寸;text-align对齐方式;<span>span段落字体标签;background-color背景颜色</span></p> <!--内部样式-->
+
+    <p1>margin-left文本左边距;letter-spacing字体字间距;font-family字体类型;font-size字体尺寸;text-align对齐方式;<span1>span段落字体标签;background-color背景颜色</span1></p1><br/> <!--外部样式-->
+
+    <a href="HTML样式(CSS).html" style="text-decoration: none;">text-decoration:none无下划线链接</a><br/><br/>
+
+    <div style="opacity: 0.5;position: static;left: 0px;top: 0px;width: 50px;height: 50px;background-color: #FF0000">position:static默认值没有定位</div> <!--opacity透明度;position定位类型;left左边距;top上边距;width宽度属性;height高度属性;background-color背景颜色(红)-->
+
+    <div style="opacity: 0.5;position: absolute;left: 60px;top:130px;width: 50px;height:50px;background-color: #ffff00">position:absolute相对于父元素绝对定位</div> <!--黄-->
+
+    <div style="opacity: 0.5;position:fixed;left: 110px;top:210px;width: 50px;height: 50px;background-color: #0000ff">position:fixed相对于窗口绝对定位</div> <!--篮-->
+
+    <div style="opacity: 0.5;position: relative;left: 150px;top: 110px;width: 50px;height: 50px;background-color: #008000">position:relative相对于正常位置相对元素</div> <!--绿-->
+
+    <div style="opacity: 0.5;position: inherit;left: 200px;top: 260px;width: 50px;height: 50px;background-color: #ffa500">position:inherit继承父元素规则</div> <!--橙-->
+
+    <div style="padding:25px;border-radius:6px;position:absolute;top:400px;border:6px solid #c0c0c0">padding边框高度属性;border-radiu弧度属性;border边框粗细属性;solid边框标签</div>
+</body>
+</html>

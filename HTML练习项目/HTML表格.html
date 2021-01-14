@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML表格
+    </title> <!--title定义HTML标题-->
+<body>
+    <table border="5" bordercolor="#87ceeb" cellpadding="5" cellspacing="0" bgcolor="#ffffff" height="300" width="600" align="center">
+        <!--border表格边框粗细属性;bordercolor表格边框颜色;cellpadding表格内边距属性;cellspacing单元格间距属性;bgcolor表格背景色属性;height表格高度属性;width表格宽度属性;align表格对齐方式-->
+        <colgroup>
+            <col span="1" style="background-color: red">
+        </colgroup> <!--colgroup对表格中的列进行组合;col定义列的样式;span规定横跨的列数,默认为1-->
+        <caption>caption表格标题标签</caption>
+        <tr> <!--第1行-->
+            <th>th表头1</th>
+            <th>th表头2</th>
+            <th>th表头3</th>
+            <th>th表头4</th>
+            <th>th表头5</th>
+            <th>th表头6</th>
+        </tr>
+        <tr> <!--第2行-->
+            <th>th表头2</th>
+            <td>tr行2,td列2</td>
+            <td colspan="2">colspan所占行数属性</td>
+            <td rowspan="2">rowspan所占列数属性</td>
+            <td>tr行2,td列6</td>
+        </tr>
+        <tr> <!--第3行-->
+            <th>th表头3</th>
+            <td>tr行3,td列2</td>
+            <td>tr行3,td列3</td>
+            <td>tr行3,td列4</td>
+            <td>tr行3,td列6</td>
+        </tr>
+        <tr bgcolor="#ffffff" align="left" valign="top"> <!--第4行-->
+            <!--bgcolor行背景颜色属性;align行内容左右对齐方式熟悉;valign行内容上下对齐方式属性-->
+            <th width="100" height="20" bgcolor="#ffffff" align="left" rowspan="1" colspan="1" valign="top">th表头4</th>
+            <td width="80" height="20" bgcolor="#ffffff" align="center" rowspan="1" colspan="1" valign="middle">tr行4,td列2</td>
+            <td width="80" height="20" bgcolor="#ffffff" align="right" rowspan="1" colspan="1" valign="bottom">tr行4,td列3</td>
+            <td>tr行4,td列4</td>
+            <td>tr行4,td列5</td>
+            <td>tr行4,td列6</td>
+        </tr>
+        <tr bgcolor="#ffffff" align="center" valign="middle"> <!--第5行-->
+            <th>th表头5</th>
+            <td>tr行5,td列2</td>
+            <td>tr行5,td列3</td>
+            <td>tr行5,td列4</td>
+            <td>tr行5,td列5</td>
+            <td>tr行5,td列6</td>
+        </tr>
+        <tr bgcolor="#ffffff" align="right" valign="bottom"> <!--第6行-->
+            <th>th表头6</th>
+            <td>tr行6,td列2</td>
+            <td>tr行6,td列3</td>
+            <td>tr行6,td列4</td>
+            <td>tr行6,td列5</td>
+            <td>tr行6,td列6</td>
+        </tr>
+    </table>
+    <hr/>
+    <table border="1" align="left" width="600" height="100">
+        <thead>
+            <tr>
+                <th>thead表格页头标签</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tbody表格主体标签</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>tfoot表格页脚标签</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
