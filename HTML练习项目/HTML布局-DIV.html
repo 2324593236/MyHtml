@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML布局-DIV
+    </title> <!--title定义HTML标题-->
+<body style="height: 1111px">
+    <div style="position: absolute;padding:0px;border-radius:30px;left: 45px;right: 45px;top:45px;opacity:1;border:5px solid #ffd700;">
+        <div id="上" style="height:50px;opacity:0.5;border-radius:25px;background-color:#ffc0cb;position:absolute;top:0px;left:0px;right:0px;text-align:center;line-height: 90px">上</div>
+        <div id="左" style="width:50px;height:500px;opacity:0.5;border-radius:25px;background-color: #da70d6;position:static;text-align:right;line-height:500px; ">左</div>
+        <div id="右" style="width: 50px;height: 500px;opacity: 0.5;border-radius:25px;background-color: #6495ed;position:fixed;top:50px;right: 50px;text-align: left;line-height: 500px">右</div>
+        <div id="下" style="height: 50px;opacity:0.5;border-radius:25px;background-color: #98fb98;position:relative;top:0px;left:0px;right:0px;text-align: center;line-height: 20px;clear:both">下</div>
+        <div style="position:inherit;border-radius:0px;left:50px;right: 50px;top: 50px;height: 450px;background-color: #c0c0c0;opacity: 0.5">
+            <br/>
+            <table align="center" width="600px">
+                <tr height="50px"></tr>
+                <tr>
+                    <td width="300px">
+                        <ul>
+                        <li>position定位类型:
+                            <ul>
+                                <li>absolute相对于父元素的绝对定位</li>
+                                <li>static默认值无定位</li>
+                                <li>fixed相对于窗口的绝对定位</li>
+                                <li>relative相对于正常位置的相对定位</li>
+                                <li>inherit继承父元素的定位规则的定位</li>
+                            </ul>
+                        <li>left左边距属性</li>
+                        <li>right右边距属性</li>
+                        <li>top上边距属性</li>
+                        <li>border-radius角弧度属性</li>
+                        <li>width宽度属性</li>
+                        <li>height高度属性</li>
+                        <li>opactiy透明度属性</li>
+                        <li>background-color背景色属性</li>
+                        <li>text-align内容水平对齐方式属性:
+                            <ul>
+                                <li>left左对齐</li>
+                                <li>center居中对齐</li>
+                                <li>right右对齐</li>
+                            </ul>
+                        <li>line-align内容垂直对齐属性</li>
+                        </ul>
+                    </td>
+                    <td width="300px" valign="top">
+                        <ul>
+                            <li>solid边框标签</li>
+                            <li>border边框粗细属性</li>
+                            <li>padding边框高度属性</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <div style="float: left;background-color: #fff000;width: 100px;height: 100px;top: 200px"></div>
+    <div id="底"style="background-color:#FFA500;clear:both;text-align:center;">底</div>
+</body>
+</html>
