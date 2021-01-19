@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML脚本
+    </title> <!--title定义HTML标题-->
+<body style="height: 1100px">
+    <script>
+        document.write("script脚本标签;document.write脚本输出语言;noscript用于浏览器无法执行脚本时的提示信息")
+        document.write("<h1>document.write可以直接执行输出html代码</h1><p>document.write可以直接执行输出html代码</p>")
+    </script>
+    <p id="item"><samp>document.getElementById('id').innerHTML="values";</samp></p>
+    <script>
+    function myFunction()
+    {
+        document.getElementById("item").innerHTML="document.getElementById('id').innerHTML='values'"
+        x=document.getElementById("item")
+        x.style.color="#ff0000"
+    }
+    </script>
+
+    <button type="button" onclick="myFunction()">事件</button>
+
+    <noscript>noscript用于浏览器无法执行脚本时的提示信息</noscript>
+
+</body>
+</html>
