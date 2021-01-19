@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML表单-1
+    </title> <!--title定义HTML标题-->
+<body style="height: 1100px">
+    <form action="HTML表单-1.html" method="get" name="文本提交表单">
+        <!--action表单提交对象;method表单作用;name表单名称-->
+        <fieldset style="width: 500px">
+            <legend>fieldset表单框标签;legend框标题标签</legend>
+            <input type="text" name="文字输入框" size="20px" value="type='text'文字输入框">type="text"文字输入框<br/>
+            <input type="password" name="密码输入框" size="20px" value="type='password'密码输入框">type="password"密码输入框<br/>
+            <input list="列表" name="预设输入列表">list="datalist.id"预设列表输入框;datalist预设列表标签
+            <datalist id="列表">
+                <option value="预设输入列表项1">
+                <option value="预设输入列表项2">
+                <option value="预设输入列表项3">
+            </datalist><br/>
+            <input type="submit" value="内容提交">type="submit"提交按钮<br/>
+            <input type="reset" value="内容重置">type="reset"重置按钮
+        </fieldset>
+    </form>
+    <form action="HTML表单-1.html" method="get" name="单选提交表单">
+        <fieldset style="width: 400px">
+            <legend>单选提交框</legend>
+            <label for="单选框1">单选框1</label><!--label为input元素定义标注;for绑定表单元素属性-->
+            <input type="radio" id="单选框1" name="单选框" value="1" title="type='radio'单选框1" checked="checked">type="radio"单选框1;checked="checked"预选中<br/>
+            <label for="单选框2">单选框2</label>
+            <input type="radio" id="单选框2" name="单选框" value="2" title="type='radio'单选框2">type="radio"单选框2<br/>
+            <input type="submit" value="单选提交"><br/>
+            <input type="reset" value="单选重置">
+        </fieldset>
+    </form>
+    <form action="HTML表单-1.html" method="get" name="多选提交表单">
+        <fieldset style="width: 400px">
+            <legend>多选提交框</legend>
+            <label for="多选框1">多选框1</label>
+            <input type="checkbox" id="多选框1" name="多选框" value="1" title="type='checkbox'多选框1" checked="checked">type="checkbox"多选框1<br/>
+            <label for="多选框2">多选框2</label>
+            <input type="checkbox" id="多选框2" name="多选框" value="2" title="type='checkbox'多选框2">type="checkbox"多选框2<br/>
+            <input type="submit" value="多选提交"><br/>
+            <input type="reset" value="多选重置">
+        </fieldset>       
+    </form>
+    <form action="HTML表单-1.html" method="get" name="下拉列表表单">
+        <fieldset style="width:300px;height: 100px">
+            <legend>下拉列表框</legend>
+            select下拉列表<br/>
+            <select name="下拉列表">
+                <optgroup label="optgroup选项列表1">
+                    <option value="下拉列表1项1">option下拉列表项1</option>
+                    <option value="下拉列表1项2" selected>option下拉列表项2</option>
+                </optgroup>
+                <optgroup label="optgroup选项列表2">
+                    <option value="下拉列表2项1">option下拉列表项1</option>
+                    <option value="下拉列表2项2">option下拉列表项2</option>
+                </optgroup>
+            </select>selected列表预选属性<br/>
+            <input type="submit" value="列表提交"><br/>
+            <input type="reset" value="列表重置">
+        </fieldset>
+    </form>
+    <textarea rows="5" cols="100" style="width: 400px;height: 50px">textarea文本框标签;rows显示的行数;cols显示的列数
+    </textarea>
+    <form action="HTML表单-1.html">
+        <input type="button" value="type='button'创建按钮">
+    </form>
+    <form oninput="(z.value)=parseInt(x.value)+parseInt(y.value)">
+        <fieldset style="width: 550px">
+            <legend>oninput计算表单标签="(z.value)计算结果=parseInt(x.value)输入值1+parseInt(y.value)输入值2"</legend>
+            输入值1<input type="range" id="x" value="50" max="100" min="5">
+            +输入值2<input type="number" id="y" value="50">
+            =<output name="z" for="x y"></output>
+        </fieldset>
+    <hr/>
+    </form>
+    <form action="HTML表单-1.html" method="get" id="注册机">
+        <input type="text" name="注册机输入">
+        <input type="submit" value="注册机提交">
+    </form>
+    keygen表单密匙对生成器:<keygen name="注册机加密" form="注册机">
+</body>
+</html>

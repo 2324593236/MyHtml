@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML框架
+    </title> <!--title定义HTML标题-->
+<body style="height: 1100px">
+    iframe内联框架标签;<br/>
+    frameborder边框="0存在|1不存在";<br/>align对齐方式="left左对齐|right右对齐|middle居中对齐|top顶部对齐|bottom底部对齐";<br/>height框架高度属性;<br/>
+    width框架宽度属性;<br/>
+    marginheight框架上下空白边距属性;<br/>
+    marginwidth框架左右空白边距属性;<br/>
+    scrolling滚动条属性="auto自动显示|yes始终显示|no不显示"<br/>
+    seamless属性使框架像页面的一部分<br/>
+    srcdoc属性规定内容显示在框架内<br/>
+    <iframe src="HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml1" align="left" marginheight="10px" marginwidth="10px" scrolling="auto" seamless></iframe>
+    <iframe src="HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml2" align="right"  marginheight="10px" marginwidth="10px" scrolling="yes" seamless></iframe>-
+    <iframe src="HTML框架.html" width="100px" height="100px" frameborder="1" name="otherhtml3" align="middle"  marginheight="10px" marginwidth="10px" scrolling="no" seamless></iframe>-
+    <iframe src="HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml4" align="top"  marginheight="10px" marginwidth="10px" scrolling="auto" seamless></iframe>-
+    <iframe src="HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml5" align="bottom"  marginheight="10px" marginwidth="10px" scrolling="auto" seamless></iframe>-<br/>
+    <iframe srcdoc="srcdoc属性规定内容显示在框架内" src="HTML框架.html" width="220px" height="50px" frameborder="1" name="otherhtml6" align="left" marginheight="10px" marginwidth="10px" scrolling="yes" seamless></iframe><br/><br/><br/><br/><hr/>
+    <iframe src="../data/HTML框架.html" width="200px" height="150px" frameborder="1" name="otherhtml7" align="left" marginheight="10px" marginwidth="10px" scrolling="yes" seamless sandbox=""></iframe><br/>
+    <iframe src="../data/HTML框架.html" width="200px" height="150px" frameborder="0" name="otherhtml7" align="right" marginheight="10px" marginwidth="10px" scrolling="auto" seamless sandbox="allow-same-origin"></iframe>
+    <iframe src="../data/HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml7" align="right" marginheight="10px" marginwidth="10px" scrolling="auto" seamless sandbox="allow-top-nawvigation"></iframe>
+    <iframe src="../data/HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml7" align="right" marginheight="10px" marginwidth="10px" scrolling="auto" seamless sandbox="allow-forms"></iframe>
+    <iframe src="../data/HTML框架.html" width="100px" height="100px" frameborder="0" name="otherhtml7" align="right" marginheight="10px" marginwidth="10px" scrolling="auto" seamless sandbox="allow-scripts"></iframe>
+    <p><a href="HTML链接.html" target="otherhtml1">target指向iframe.name</a></p>
+</body>
+</html>
